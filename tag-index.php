@@ -84,7 +84,7 @@ get_header(); ?>
 							$currentLetter = array_shift($characters);
 						
 							// Print stuff	
-							$html .= "<div class='tag-group grid-25'>";					
+							$html .= "<div class='tag-group'>";					
 							$html .= "<h3 class='tag-title'>{$currentLetter}</h3>";
 							$html .= "<ul class='tag-list'>";
 							
@@ -94,7 +94,8 @@ get_header(); ?>
 								// Retrieve first letter from tag name
 								$firstChar = substr($getTags[0]->name, 0, 1);
 							
-								//if ( $currentLetter == $firstChar ){
+								// Does the first letter match the current letter?
+								// Check both upper and lowercase characters for true
 								if ( strcasecmp($currentLetter, $firstChar) == 0 ){	
 															
 									// Get the current tag
