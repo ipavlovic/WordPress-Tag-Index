@@ -39,7 +39,7 @@ get_header(); ?>
 						if ( $isFirstCharLetter == false ){
 						
 							// Print a number container	
-							$html .= "<div class='tag-group grid-25'>";					
+							$html .= "<div class='tag-group'>";					
 							$html .= "<h3 class='tag-title'>#</h3>";
 							$html .= "<ul class='tag-list'>";
 							
